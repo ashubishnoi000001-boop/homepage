@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage</title>
+  <link rel="shortcut icon" href="./assets/img/loggo.png" type="image/x-icon">
+  <style type="text/tailwindcss">
+    @theme {
+        --font-Poppins:"Poppins", sans-serif;
+        --font-Yantramanav:"Yantramanav", sans-serif;
+        --color-blue: #2C49FE;
+        --color-lightblue:#2D3CAE;
+        --color-sky:#01C8FF;
+        --color-nav:#6E6E6E;
+        --color-blurblue:#2C49FEBD;
+        --color-voilet:#2D3CAE87;
+
+        --leading-159:159%;
+        --leading-150:150%;
+        --leading-135:135%;
+        --leading-100:100%;
+        --leading-145:145%;
+        --leading-130:130%;
+        --leading-138:138%;
+        --text-custom-35:35px;
+        --text-custom-12:12px;
+        --text-custom-35:35px;
+        --text-custom-64:64px;
+        --text-custom-25:25px;
+
+        --shadow-custom: 2px 9px 32px 0px #0000000F;
+      }
+      </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      list-style-type: none;
+      text-decoration: none;
+    }
+
+
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(-2px);
+      }
+
+      40% {
+        transform: translateX(2px);
+      }
+
+      60% {
+        transform: translateX(-2px);
+      }
+
+      80% {
+        transform: translateX(2px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section-hero bg-[url(./assets/img/header-sectionbg.webp)] w-full bg-cover bg-center ">
+    <div class="container-hero max-w-[1360px] w-full  mx-auto pb-[104px] pt-[17px] pl-5 pr-5 max-lg:pb-20">
+      <nav class="relative flex w-full items-center justify-between">
+        <a class="flex items-center gap-[14px]" href="loggo">
+          <img width="98px" height="66px" class="max-md:max-w-[60px] max-md:w-full max-md:h-auto"
+            src="./assets/img/loggo.png" alt="loggo">
+          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 tracking-[-0.52px] text-blue">
+            Events
+            <span class="text-sky">Free</span>
+          </p>
+        </a>
+
+        <!-- checkbox -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+
+        <!-- desktop screen -->
+        <ul class="nav-list hidden lg:flex items-center gap-[30px] ">
+          <li class="relative flex">
+            <a href="#product" class="font-Poppins text-base font-normal leading-150 text-white 
+                                before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full ">HOME</a>
+          </li>
+
+          <li class="relative flex">
+            <a href="#services" class="font-Poppins text-base font-normal leading-150 text-white
+                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full">EVENTS</a>
+          </li>
+
+          <li class="relative flex">
+            <a href="#contact" class="font-Poppins text-base font-normal leading-150 text-white
+                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full">FEED</a>
+          </li>
+
+          <li class="relative flex">
+            <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
+                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full">USER NAME</a>
+          </li>
+
+          <li>
+            <button
+              class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-3 font-Poppins text-base font-semibold leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue">
+              Log Out </button>
+          </li>
+        </ul>
+
+
+        <!-- Mobile full-screen menu -->
+        <ul
+          class="fixed inset-0 z-40 flex h-screen w-full translate-x-full flex-col items-center justify-center gap-8 bg-nav text-white transition-transform duration-300 peer-checked:translate-x-0 lg:hidden">
+
+          <li class="relative flex">
+            <a href="#product" class="font-Poppins text-base font-normal leading-150 text-white 
+                                before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full ">HOME</a>
+          </li>
+
+          <li class="relative flex">
+            <a href="#services" class="font-Poppins text-base font-normal leading-150 text-white
+                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full">EVENTS</a>
+          </li>
+
+          <li class="relative flex">
+            <a href="#contact" class="font-Poppins text-base font-normal leading-150 text-white
+                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full">FEED</a>
+          </li>
+
+          <li class="relative flex">
+            <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
+                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-full">USER NAME</a>
+          </li>
+
+          <button
+            class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-3 font-Poppins text-base font-normal leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue">
+            Log Out </button>
+        </ul>
+
+
+
+        <label for="menu-toggle" class="relative z-50 flex cursor-pointer flex-col gap-[6px] lg:hidden"
+          aria-label="Toggle navigation menu">
+          <span class="h-[2px] w-7 rounded bg-white transition-all peer-checked:bg-black"></span>
+          <span class="h-[2px] w-7 rounded bg-white transition-all"></span>
+          <span class="h-[2px] w-7 rounded bg-white transition-all"></span>
+        </label>
+
+      </nav>
+      <p
+        class=" items-start lg:max-w-[1044px] w-full mt-[173px] max-lg:mt-32 max-md:mt-16 max-sm:mt-10 text-white font-Poppins font-bold leading-150 text-custom-64 max-xl:text-5xl max-lg:text-4xl max-sm:text-3xl max-xl:text-center max-xl:mx-auto">
+        Sed tortor in
+        <span class="relative inline-block w-fit">
+          quisque morbi
+          <span class="absolute left-0 bottom-[-8px] w-full h-2 max-md:h-1 flex mb-1">
+            <span class="w-[414px] bg-blue"></span>
+            <span class="w-[58px] bg-sky"></span>
+          </span>
+        </span>
+        scelerisque etiam eu.
+      </p>
+
+      <p
+        class="text-left font-normal font-Yantramanav text-xl leading-130 lg:max-w-[765px] w-full text-white mt-[18px] max-xl:text-center mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse
+        maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit
+        cursus,</p>
+
+      <div class="flex justify-between gap-3 items-center max-sm:flex-wrap max-sm:justify-center max-w-[309px] w-full mt-[33px] max-xl:mx-auto">
+        <button
+          class="font-semibold font-Poppins text-xl text-white bg-blue p-[12px_28px] rounded-[28px] hover:text-blue hover:bg-white cursor-pointer transition-all ease-in duration-300">Get
+          Started</button>
+        <p class="text-white font-Poppins leading-150 text-xl font-normal text-center">Learn more</p>
+      </div>
+      <!-- here we work -->
+      <div
+        class="max-md:flex-col max-lg:rounded-[50px] max-md:rounded-2xl gap-5 max-lg:justify-center max-xl:mx-auto max-xl:flex-wrap max-w-[962px] flex items-center content-center justify-between w-full bg-blurblue rounded-[150px] mt-[145px] max-lg:mt-28 max-md:mt-16 max-sm:mt-9 pl-[35px] pr-[23px] max-lg:pl-6 max-lg:pr-6">
+        <div
+          class="flex items-center gap-[53px] max-md:mt-[22px] mx-auto max-md:mb-[22px] max-sm:gap-7 max-xl:mx-auto max-sm:flex-wrap max-sm:justify-center">
+          <!-- location box -->
+          <div class="gap-[17px] flex items-center justify-center pt-[17px] pb-[17px] max-md:p-0">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.375 12.9167C19.375 15.0569 17.6401 16.7917 15.5 16.7917C13.3599 16.7917 11.625 15.0569 11.625 12.9167C11.625 10.7766 13.3599 9.04175 15.5 9.04175C17.6401 9.04175 19.375 10.7766 19.375 12.9167Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+              <path
+                d="M15.4993 2.58337C12.7588 2.58337 10.1305 3.67206 8.19258 5.60994C6.2547 7.54781 5.16602 10.1761 5.16602 12.9167C5.16602 15.3605 5.68527 16.9596 7.10352 18.7292L15.4993 28.4167L23.8952 18.7292C25.3134 16.9596 25.8327 15.3605 25.8327 12.9167C25.8327 10.1761 24.744 7.54781 22.8061 5.60994C20.8682 3.67206 18.2399 2.58337 15.4993 2.58337V2.58337Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+            </svg>
+
+            <div class="max-w-[81px] w-full mr-[33px] max-md:mr-0">
+              <p class="font-Yantramanav font-medium text-xl leading-130 text-white">Location</p>
+              <p class="font-Yantramanav font-normal text-sm leading-130 text-white/70">Search by city</p>
+            </div>
+            <div class="before:content-[''] h-[74px] min-w-[3px] bg-white max-md:hidden"></div>
+          </div>
+          <!-- calender box -->
+          <div class="gap-[21px] flex items-center justify-center pt-[17px] pb-[17px] max-md:p-0">
+            <img width="23" height="23" src="./assets/img/calender.png" alt="date-svg">
+            <div class="max-w-[81px] w-full mr-[41px] max-md:mr-0">
+              <p class="font-Yantramanav font-medium text-xl leading-130 text-white">Date</p>
+              <p class="font-Yantramanav font-normal text-sm leading-130 text-white/70">09/23/2021</p>
+            </div>
+            <div class="before:content-[''] h-[74px] min-w-[3px] bg-white max-md:hidden"></div>
+          </div>
+          <!-- community box -->
+          <div class=" gap-[15px] flex items-center justify-center pt-[17px] pb-[17px] max-md:p-0">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8981 24.69L20.0981 18.285C19.9848 17.3778 19.5439 16.5432 18.8583 15.9383C18.1728 15.3333 17.2899 14.9996 16.3756 15H13.6206C12.7068 15.0003 11.8245 15.3342 11.1395 15.9391C10.4545 16.544 10.0139 17.3782 9.90062 18.285L9.09937 24.69C9.0554 25.0419 9.08679 25.3991 9.19147 25.7379C9.29615 26.0768 9.47171 26.3894 9.70651 26.6552C9.9413 26.921 10.2299 27.1338 10.5533 27.2794C10.8766 27.4251 11.2272 27.5003 11.5819 27.5H18.4169C18.7714 27.5001 19.1219 27.4248 19.4451 27.279C19.7683 27.1333 20.0567 26.9205 20.2914 26.6547C20.5261 26.389 20.7015 26.0764 20.8061 25.7376C20.9107 25.3989 20.9421 25.0418 20.8981 24.69V24.69Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+              <path
+                d="M18.75 6.25C18.75 8.32107 17.0711 10 15 10C12.9289 10 11.25 8.32107 11.25 6.25C11.25 4.17893 12.9289 2.5 15 2.5C17.0711 2.5 18.75 4.17893 18.75 6.25Z"
+                stroke-width="2" stroke="white" />
+              <path
+                d="M7.5 11.25C7.5 12.6307 6.38071 13.75 5 13.75C3.61929 13.75 2.5 12.6307 2.5 11.25C2.5 9.86929 3.61929 8.75 5 8.75C6.38071 8.75 7.5 9.86929 7.5 11.25Z"
+                stroke-width="2" stroke="white" />
+              <path
+                d="M27.5 11.25C27.5 12.6307 26.3807 13.75 25 13.75C23.6193 13.75 22.5 12.6307 22.5 11.25C22.5 9.86929 23.6193 8.75 25 8.75C26.3807 8.75 27.5 9.86929 27.5 11.25Z"
+                stroke-width="2" stroke="white" />
+              <path
+                d="M5.00023 17.5H4.61773C4.02593 17.4999 3.4533 17.7098 3.0017 18.0923C2.5501 18.4747 2.24883 19.005 2.15148 19.5887L1.73523 22.0887C1.67549 22.4469 1.69451 22.8138 1.79094 23.1639C1.88738 23.514 2.05892 23.8389 2.29364 24.116C2.52836 24.393 2.82062 24.6156 3.1501 24.7683C3.47957 24.921 3.83835 25 4.20148 25H8.75023"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+              <path
+                d="M25 17.5H25.3825C25.9743 17.4999 26.5469 17.7098 26.9985 18.0923C27.4501 18.4747 27.7514 19.005 27.8487 19.5887L28.265 22.0887C28.3247 22.4469 28.3057 22.8138 28.2093 23.1639C28.1129 23.514 27.9413 23.8389 27.7066 24.116C27.4719 24.393 27.1796 24.6156 26.8501 24.7683C26.5207 24.921 26.1619 25 25.7987 25H21.25"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+            </svg>
+
+            <div class="max-w-[81px] w-full mr-[35px] max-md:mr-0">
+              <p class="font-Yantramanav font-medium text-xl leading-130 text-white">Capicity</p>
+              <p class="font-Yantramanav font-normal text-sm leading-130 text-white/70">Search by city</p>
+            </div>
+            <div class="before:content-[''] h-[74px] min-w-[3px] bg-white max-md:hidden"></div>
+          </div>
+        </div>
+        <!-- button -->
+        <button
+          class="p-[24.5px_39.5px] max-lg:my-4 max-md:mt-0 max-sm:p-[20px_30px] max-xl bg-white text-blue rounded-[150px] font-Poppins font-bold text-xl max-md:text-base leading-none hover:bg-blue hover:text-white border border-white transition-all ease-in duration-300 cursor-pointer">
+          GO CHECK
+        </button>
+      </div>
+      <!-- above from here -->
+  </section>
+
+  <section class="section1 w-full">
+    <div
+      class="container max-w-[1401px] w-full  mx-auto pt-[137px] pb-[73px] p-5 max-lg:pt-20 max-md:pb-[60px] max-md:pt-[60px]">
+      <!-- frame -->
+      <div class=" frame grid grid-cols-2 max-xl:grid-cols-1 items-center">
+        <!-- img frame (left) -->
+        <img class="max-xl:mx-auto " width="624" height="477" src="./assets/img/iframe.png" alt="i-frame img">
+        <!-- right frame -->
+        <div class="max-xl:mx-auto flex flex-col max-xl:justify-center max-xl:items-center ">
+
+          <span class=" top-0 w-[189px] h-2 flex mb-[21px] max-xl:mx-auto">
+            <span class="w-[166px] bg-blue"></span>
+            <span class="w-[23px] bg-sky"></span>
+          </span>
+
+          <p
+            class="lg:max-w-[583px] text-left w-full font-bold text-5xl max-md:text-3xl text-black leading-150 font-Poppins max-xl:text-center ">
+            What make
+            us special ?</p>
+          <p
+            class="lg:max-w-[633px] text-left w-full font-normal text-base text-black/70 font-Poppins max-xl:text-center leading-150 mt-[6px] mb-[9px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna
+            in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc
+            elit elit, malesuada id suscipit cursus,</p>
+
+
+          <div class=" max-w-[550px] w-full mt-10">
+
+            <div class="grid grid-cols-2 gap-[30px] max-sm:grid-cols-1 max-sm:gap-[60px]">
+              <!-- box-1 -->
+              <div class="max-w-[260px] w-full group relative max-sm:mx-auto">
+                <!-- 1st-circle -->
+                <div
+                  class="absolute z-10 top-[-37px] left-[90px] w-[79px] h-[79px] m-auto flex items-center justify-center bg-white border-[2px] border-blue rounded-[50%]">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.19922 13.2C7.19922 11.6087 7.83136 10.0826 8.95658 8.95737C10.0818 7.83215 11.6079 7.20001 13.1992 7.20001H25.1992C26.7905 7.20001 28.3166 7.83215 29.4419 8.95737C30.5671 10.0826 31.1992 11.6087 31.1992 13.2C31.1992 13.5183 31.0728 13.8235 30.8477 14.0485C30.6227 14.2736 30.3175 14.4 29.9992 14.4C29.681 14.4 29.3757 14.2736 29.1507 14.0485C28.9256 13.8235 28.7992 13.5183 28.7992 13.2C28.7992 12.2452 28.4199 11.3296 27.7448 10.6544C27.0697 9.9793 26.154 9.60001 25.1992 9.60001H13.1992C12.2444 9.60001 11.3288 9.9793 10.6536 10.6544C9.9785 11.3296 9.59922 12.2452 9.59922 13.2V25.2C9.59922 26.1548 9.9785 27.0705 10.6536 27.7456C11.3288 28.4207 12.2444 28.8 13.1992 28.8H24.0328C24.1812 27.4814 24.8099 26.2636 25.7989 25.379C26.788 24.4943 28.0681 24.0048 29.395 24.0039C30.722 24.0029 32.0028 24.4906 32.9931 25.3737C33.9834 26.2569 34.6139 27.4738 34.7642 28.7922C34.9145 30.1106 34.5741 31.4382 33.808 32.5216C33.0419 33.6051 31.9036 34.3685 30.6105 34.6662C29.3174 34.9639 27.96 34.7751 26.7972 34.1358C25.6344 33.4965 24.7478 32.4514 24.3064 31.2H13.1992C11.6079 31.2 10.0818 30.5679 8.95658 29.4427C7.83136 28.3174 7.19922 26.7913 7.19922 25.2V13.2ZM17.9992 33.6C17.681 33.6 17.3757 33.7264 17.1507 33.9515C16.9256 34.1765 16.7992 34.4818 16.7992 34.8C16.7992 36.3913 17.4314 37.9174 18.5566 39.0427C19.6818 40.1679 21.2079 40.8 22.7992 40.8H34.7992C36.3905 40.8 37.9166 40.1679 39.0419 39.0427C40.1671 37.9174 40.7992 36.3913 40.7992 34.8V22.8C40.7992 21.2087 40.1671 19.6826 39.0419 18.5574C37.9166 17.4322 36.3905 16.8 34.7992 16.8H23.692C23.2507 15.5486 22.364 14.5036 21.2012 13.8642C20.0385 13.2249 18.681 13.0361 17.3879 13.3338C16.0948 13.6316 14.9566 14.395 14.1905 15.4784C13.4243 16.5618 13.0839 17.8894 13.2342 19.2078C13.3845 20.5262 14.015 21.7431 15.0053 22.6263C15.9956 23.5095 17.2765 23.9971 18.6034 23.9962C19.9303 23.9952 21.2105 23.5057 22.1995 22.6211C23.1885 21.7364 23.8172 20.5186 23.9656 19.2H34.7992C35.754 19.2 36.6697 19.5793 37.3448 20.2544C38.0199 20.9296 38.3992 21.8452 38.3992 22.8V34.8C38.3992 35.7548 38.0199 36.6705 37.3448 37.3456C36.6697 38.0207 35.754 38.4 34.7992 38.4H22.7992C21.8444 38.4 20.9288 38.0207 20.2536 37.3456C19.5785 36.6705 19.1992 35.7548 19.1992 34.8C19.1992 34.4818 19.0728 34.1765 18.8477 33.9515C18.6227 33.7264 18.3175 33.6 17.9992 33.6Z"
+                      fill="#2C49FE" />
+                  </svg>
+
+                </div>
+                <div
+                  class="max-w-[260px] rounded-[5px] border border-blue w-full bg-white group-hover:bg-blue cursor-pointer duration-300 transition-all ease-in text-blue">
+                  <div class="max-w-[220px] w-full mx-auto p-[45px_20px_17px_20px]">
+                    <p
+                      class="text-center mb-[2px] max-w-[98px] w-full mx-auto font-Poppins font-medium text-custom-25 leading-159 text-blue cursor-pointer duration-300 transition-colors group-hover:text-white">
+                      Sharing</p>
+                    <p
+                      class="max-w-[220px] w-full mx-auto text-center font-normal text-base text-lightblue leading-150 font-Poppins cursor-pointer duration-300 transition-colors group-hover:text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in </p>
+                  </div>
+                </div>
+              </div>
+              <!-- box-2 -->
+              <div class="max-w-[260px] w-full group relative max-sm:mx-auto">
+                <!-- 2nd-circle -->
+                <div
+                  class="absolute top-[-37px] left-[90px] w-[79px] h-[79px] m-auto flex items-center justify-center bg-white border-[2px] border-blue rounded-[50%]">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M28.875 9.28125C28.875 7.91373 28.3318 6.60222 27.3648 5.63523C26.3978 4.66825 25.0863 4.125 23.7188 4.125H9.28125C7.91373 4.125 6.60222 4.66825 5.63523 5.63523C4.66825 6.60222 4.125 7.91373 4.125 9.28125V23.7188C4.125 25.0863 4.66825 26.3978 5.63523 27.3648C6.60222 28.3318 7.91373 28.875 9.28125 28.875H12.9051C12.3798 28.2388 11.9254 27.5472 11.55 26.8125H9.28125C8.46074 26.8125 7.67383 26.4866 7.09364 25.9064C6.51345 25.3262 6.1875 24.5393 6.1875 23.7188V12.375H15.1326C16.9785 11.0756 19.2287 10.3125 21.6562 10.3125C24.3994 10.3125 26.9156 11.286 28.875 12.9051V9.28125ZM21.6562 10.3125H6.1875V9.28125C6.1875 8.46074 6.51345 7.67383 7.09364 7.09364C7.67383 6.51345 8.46074 6.1875 9.28125 6.1875H23.7188C24.5393 6.1875 25.3262 6.51345 25.9064 7.09364C26.4866 7.67383 26.8125 8.46074 26.8125 9.28125V10.3125H21.6562ZM20.3672 17.5312C20.3672 17.1894 20.503 16.8615 20.7447 16.6197C20.9865 16.378 21.3144 16.2422 21.6562 16.2422C21.9981 16.2422 22.326 16.378 22.5678 16.6197C22.8095 16.8615 22.9453 17.1894 22.9453 17.5312C22.9453 17.8731 22.8095 18.201 22.5678 18.4428C22.326 18.6845 21.9981 18.8203 21.6562 18.8203C21.3144 18.8203 20.9865 18.6845 20.7447 18.4428C20.503 18.201 20.3672 17.8731 20.3672 17.5312ZM22.6875 25.7812C22.6875 26.0548 22.5789 26.3171 22.3855 26.5105C22.1921 26.7039 21.9298 26.8125 21.6562 26.8125C21.3827 26.8125 21.1204 26.7039 20.927 26.5105C20.7336 26.3171 20.625 26.0548 20.625 25.7812V21.6562C20.625 21.3827 20.7336 21.1204 20.927 20.927C21.1204 20.7336 21.3827 20.625 21.6562 20.625C21.9298 20.625 22.1921 20.7336 22.3855 20.927C22.5789 21.1204 22.6875 21.3827 22.6875 21.6562V25.7812ZM12.375 21.6562C12.375 20.4374 12.6151 19.2305 13.0815 18.1045C13.5479 16.9784 14.2316 15.9553 15.0934 15.0934C15.9553 14.2316 16.9784 13.5479 18.1045 13.0815C19.2305 12.6151 20.4374 12.375 21.6562 12.375C22.8751 12.375 24.082 12.6151 25.208 13.0815C26.3341 13.5479 27.3572 14.2316 28.2191 15.0934C29.0809 15.9553 29.7646 16.9784 30.231 18.1045C30.6974 19.2305 30.9375 20.4374 30.9375 21.6562C30.9375 24.1178 29.9597 26.4785 28.2191 28.2191C26.4785 29.9597 24.1178 30.9375 21.6562 30.9375C19.1947 30.9375 16.834 29.9597 15.0934 28.2191C13.3528 26.4785 12.375 24.1178 12.375 21.6562V21.6562ZM14.4375 21.6562C14.4375 23.5708 15.198 25.4069 16.5518 26.7607C17.9056 28.1145 19.7417 28.875 21.6562 28.875C23.5708 28.875 25.4069 28.1145 26.7607 26.7607C28.1145 25.4069 28.875 23.5708 28.875 21.6562C28.875 19.7417 28.1145 17.9056 26.7607 16.5518C25.4069 15.198 23.5708 14.4375 21.6562 14.4375C19.7417 14.4375 17.9056 15.198 16.5518 16.5518C15.198 17.9056 14.4375 19.7417 14.4375 21.6562V21.6562Z"
+                      fill="#2C49FE" />
+                  </svg>
+
+                </div>
+                <div
+                  class="max-w-[260px] rounded-[5px] border border-blue w-full bg-white group-hover:bg-blue cursor-pointer duration-300 transition-all ease-in text-blue">
+                  <div class="max-w-[220px] w-full mx-auto  p-[43px_20px_16px_20px]">
+                    <p
+                      class="text-center mb-[2px] max-w-[98px] w-full mx-auto font-Poppins font-medium text-custom-25 leading-159 text-blue cursor-pointer duration-300 transition-colors group-hover:text-white">
+                      Info</p>
+                    <p
+                      class="max-w-[220px] w-full mx-auto text-center font-normal text-base text-lightblue leading-150 font-Poppins cursor-pointer duration-300 transition-colors group-hover:text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- box-3 -->
+            <div class="max-w-[260px] w-full group mx-auto relative mt-9 max-sm:mt-16">
+              <!-- 3rd-cicle -->
+              <div
+                class="absolute top-[-37px] left-[90px] w-[79px] h-[79px] m-auto flex items-center justify-center bg-white border-[2px] border-blue rounded-[50%]">
+                <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_34717_6862)">
+                    <path
+                      d="M38.6465 19.8749H32.0215C31.1432 19.8758 30.3012 20.2251 29.6802 20.8461C29.0591 21.4671 28.7099 22.3092 28.709 23.1874V29.8124C28.7096 30.3979 28.9424 30.9593 29.3564 31.3733C29.7705 31.7873 30.3318 32.0202 30.9173 32.0208V39.7499C30.9179 40.3354 31.1508 40.8968 31.5648 41.3108C31.9788 41.7248 32.5401 41.9577 33.1257 41.9583H37.5423C38.1278 41.9577 38.6892 41.7248 39.1032 41.3108C39.5172 40.8968 39.7501 40.3354 39.7507 39.7499V32.0208C40.3362 32.0202 40.8975 31.7873 41.3115 31.3733C41.7255 30.9593 41.9584 30.3979 41.959 29.8124V23.1874C41.9581 22.3092 41.6088 21.4671 40.9878 20.8461C40.3668 20.2251 39.5247 19.8758 38.6465 19.8749V19.8749ZM39.7507 29.8124H37.5423V39.7499H33.1257V29.8124H30.9173V23.1874C30.9173 22.8946 31.0336 22.6137 31.2407 22.4067C31.4478 22.1996 31.7286 22.0833 32.0215 22.0833H38.6465C38.9393 22.0833 39.2202 22.1996 39.4272 22.4067C39.6343 22.6137 39.7507 22.8946 39.7507 23.1874V29.8124Z"
+                      fill="#2C49FE" />
+                    <path
+                      d="M30.918 14.3541C30.918 13.4806 31.177 12.6267 31.6623 11.9003C32.1476 11.174 32.8374 10.6079 33.6445 10.2736C34.4515 9.93935 35.3395 9.85189 36.1963 10.0223C37.053 10.1927 37.84 10.6134 38.4577 11.2311C39.0754 11.8487 39.496 12.6357 39.6664 13.4925C39.8369 14.3492 39.7494 15.2373 39.4151 16.0443C39.0808 16.8513 38.5147 17.5411 37.7884 18.0264C37.0621 18.5117 36.2082 18.7708 35.3346 18.7708C34.1636 18.7696 33.0409 18.3039 32.2129 17.4759C31.3848 16.6478 30.9191 15.5251 30.918 14.3541V14.3541ZM33.1263 14.3541C33.1263 14.7909 33.2558 15.2178 33.4985 15.581C33.7411 15.9442 34.086 16.2272 34.4895 16.3943C34.8931 16.5615 35.3371 16.6052 35.7655 16.52C36.1938 16.4348 36.5873 16.2245 36.8962 15.9156C37.205 15.6068 37.4153 15.2133 37.5005 14.7849C37.5857 14.3566 37.542 13.9125 37.3749 13.509C37.2077 13.1055 36.9247 12.7606 36.5615 12.5179C36.1984 12.2753 35.7714 12.1458 35.3346 12.1458C34.7491 12.1464 34.1878 12.3792 33.7738 12.7932C33.3597 13.2072 33.1269 13.7686 33.1263 14.3541V14.3541Z"
+                      fill="#2C49FE" />
+                    <path
+                      d="M24.2923 26.4999V23.1874C24.2914 22.3092 23.9422 21.4671 23.3211 20.8461C22.7001 20.2251 21.8581 19.8758 20.9798 19.8749H14.3548C13.4766 19.8758 12.6345 20.2251 12.0135 20.8461C11.3925 21.4671 11.0432 22.3092 11.0423 23.1874V26.4999H8.83398V28.7083H26.5007V26.4999H24.2923ZM13.2507 23.1874C13.2507 22.8946 13.367 22.6137 13.5741 22.4067C13.7811 22.1996 14.062 22.0833 14.3548 22.0833H20.9798C21.2727 22.0833 21.5535 22.1996 21.7606 22.4067C21.9677 22.6137 22.084 22.8946 22.084 23.1874V26.4999H13.2507V23.1874Z"
+                      fill="#2C49FE" />
+                    <path
+                      d="M13.25 14.3541C13.25 13.4806 13.509 12.6267 13.9943 11.9003C14.4797 11.174 15.1694 10.6079 15.9765 10.2736C16.7835 9.93935 17.6716 9.85189 18.5283 10.0223C19.3851 10.1927 20.172 10.6134 20.7897 11.2311C21.4074 11.8487 21.8281 12.6357 21.9985 13.4925C22.1689 14.3492 22.0814 15.2373 21.7471 16.0443C21.4128 16.8513 20.8468 17.5411 20.1204 18.0264C19.3941 18.5117 18.5402 18.7708 17.6667 18.7708C16.4957 18.7696 15.3729 18.3039 14.5449 17.4759C13.7169 16.6478 13.2512 15.5251 13.25 14.3541V14.3541ZM15.4583 14.3541C15.4583 14.7909 15.5879 15.2178 15.8305 15.581C16.0732 15.9442 16.4181 16.2272 16.8216 16.3943C17.2251 16.5615 17.6691 16.6052 18.0975 16.52C18.5259 16.4348 18.9194 16.2245 19.2282 15.9156C19.537 15.6068 19.7474 15.2133 19.8326 14.7849C19.9178 14.3566 19.874 13.9125 19.7069 13.509C19.5398 13.1055 19.2567 12.7606 18.8936 12.5179C18.5304 12.2753 18.1034 12.1458 17.6667 12.1458C17.0812 12.1464 16.5198 12.3792 16.1058 12.7932C15.6918 13.2072 15.4589 13.7686 15.4583 14.3541V14.3541Z"
+                      fill="#2C49FE" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_34717_6862">
+                      <rect width="35.3333" height="35.3333" fill="white" transform="translate(8.83398 8.83331)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div
+                class="max-w-[260px] rounded-[5px] border border-blue w-full bg-white group-hover:bg-blue cursor-pointer duration-300 transition-all ease-in text-blue">
+                <div class="max-w-[220px] w-full mx-auto  p-[43px_20px_16px_20px]">
+                  <p
+                    class=" text-center mb-[2px] max-w-[98px] w-full mx-auto font-Poppins font-medium text-custom-25 leading-159 text-blue cursor-pointer duration-300 transition-colors group-hover:text-white">
+                    Help</p>
+                  <p
+                    class="max-w-[220px] w-full mx-auto text-center font-normal text-base text-lightblue leading-150 font-Poppins cursor-pointer duration-300 transition-colors group-hover:text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2 bg-[url(./assets/img/section-2.webp)] w-full bg-cover bg-center">
+
+    <div class="container max-w-[960px] w-full mx-auto pr-5 pl-5 pt-[50px] ">
+      <div class="lg:max-w-[765px] w-full gap-10 lg:mx-auto flex flex-col mb-[78px]">
+        <p
+          class="lg:max-w-[708px] w-full mx-auto font-bold font-Poppins text-center text-5xl max-md:text-3xl text-white leading-130 ">
+          Lorem ipsum dolor sit amet, consectetur
+        </p>
+        <p class="lg:max-w-[765px] w-full font-normal text-base text-center text-white leading-150">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse
+          maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec
+        </p>
+      </div>
+
+      <div class="max-w-[920px] w-full grid grid-cols-4 max-md:grid-cols-2 max-md:gap-5 pb-[46px]">
+        <div class="max-w-[122px] w-full flex flex-col items-center mx-auto">
+          <img width="39" height="39" src="./assets/img/sec-2 img 1.png" alt="PARTICIPANTS">
+          <p class="font-bold text-custom-35 text-white font-Poppinns leading-150 mt-[3px] mb-[4px]">8800</p>
+          <p class="font-normal font-Poppins text-lg text-white leading-145">PARTICIPANTS</p>
+        </div>
+
+        <div class="max-w-[67px] w-full flex flex-col items-center mx-auto">
+          <img width="40" height="40" src="./assets/img/sec-2 img-2.png" alt="topic">
+          <p class="font-bold text-custom-35 text-white font-Poppinns leading-150 mt-[2px] mb-[4px]">300</p>
+          <p class="font-normal font-Poppins text-lg text-white leading-145">TOPICS</p>
+        </div>
+
+        <div class="max-w-[84px] w-full flex flex-col items-center mx-auto">
+          <img width="38" height="38" src="./assets/img/sec-2 img-3.png" alt="speaker">
+          <p class="font-bold text-custom-35 text-white font-Poppinns leading-150 mt-[3px] mb-[4px]">50</p>
+          <p class="font-normal font-Poppins text-lg text-white leading-145">SPEAKERS</p>
+        </div>
+
+        <div class="max-w-[77px] w-full flex flex-col items-center mx-auto">
+          <img width="42" height="42" src="./assets/img/sec-2 img-4.png" alt="tropy">
+          <p class="font-bold text-custom-35 text-white font-Poppinns leading-150 mt-[1px] mb-[4px]">30</p>
+          <p class="font-normal font-Poppins text-lg text-white leading-145">AWARDS</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-2 w-full">
+    <div
+      class="container max-w-[1359px] w-full mx-auto pt-[122px] pb-[90px] max-lg:pt-[80px] max-lg:pb-[80px] max-md:pt-[60px] max-md:pb-[60px] pr-5 pl-5">
+      <!-- frame-1 card and heading -->
+      <div
+        class="max-w-[1319px] w-full flex justify-between mb-[163px] max-lg:mb-20 max-xl:mb-8 max-md:mb-4 max-xl:flex-wrap max-xl:justify-center">
+
+        <div class="lg:max-w-[543px] w-full items-start">
+          <span class=" top-0 w-[189px] h-2 flex mb-[9px] mt-[31px] max-xl:mx-auto">
+            <span class="w-[166px] bg-blue"></span>
+            <span class="w-[23px] bg-sky"></span>
+          </span>
+          <p
+            class="lg:max-w-[338px] w-full mb-[12px] font-Poppins font-bold text-5xl max-md:text-3xl text-left text-black leading-138 max-xl:mx-auto max-xl:text-center">
+            Explore our
+            latest events</p>
+          <p class="w-full font-Poppins font-normal text-base text-black/70 leading-150 text-left max-xl:text-center">Lorem
+            ipsum dolor sit amet,
+            consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut
+            justo et leo congue lacinia vitae nec arcu.</p>
+          <p class="mt-[15px] mb-[51px] font-Poppins font-bold text-base text-black leading-150 max-xl:text-center">
+            LEARN MORE</p>
+        </div>
+        <div class="flex gap-[31px] max-w-[709px] w-full max-lg:flex-wrap max-md:text-center max-md:justify-center">
+          <!-- card-1 -->
+          <div
+            class="card max-w-[339px] w-full rounded-[5px] transition-all ease-in cursor-pointer duration-300 hover:shadow-custom p-[10px_11px_24px_13px]">
+            <img width="315" height="173" src="./assets/img/card-1.png" alt="card-one">
+            <div class="max-w-[271px] mt-[13px] w-full ml-[11px] ">
+              <p class="font-normal font-Poppins text-sm leading-150 text-black/70">09/23/2021</p>
+              <p class="font-medium font-Poppins text-2xl text-black leading-130 pb-[5px]">Lorem ipsum</p>
+              <p class="max-w-[270px] w-full font-Poppins font-normal leading-150 text-black/70 text-base">Lorem ipsum
+                dolor sit amet,
+                consectetur adipiscing elit. Nunc efficitur urna in </p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div
+            class="card max-w-[339px] w-full rounded-[5px] transition-all ease-in cursor-pointer duration-300 hover:shadow-custom p-[10px_11px_24px_13px]">
+            <img width="315" height="173" src="./assets/img/card-2.png" alt="card-two">
+            <div class="max-w-[271px] w-full mt-[13px] ml-[11px]">
+              <p class="font-normal font-Poppins text-sm leading-150 text-black/70">09/23/2021</p>
+              <p class="font-medium font-Poppins text-2xl text-black leading-130 pb-[5px]">Lorem ipsum</p>
+              <p class="max-w-[270px] w-full font-Poppins font-normal leading-150 text-black/70 text-base">Lorem ipsum
+                dolor sit amet,
+                consectetur adipiscing elit. Nunc efficitur urna in </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- frame-2 form and img -->
+      <div
+        class="max-w-[1284px] w-full flex justify-between items-center max-xl:gap-5 max-xl:flex-wrap max-xl:justify-center">
+        <img width="536" height="533"
+          class=" max-xl:max-w-[435px] max-md:max-w-[350px] max-lg:w-full max-lg:h-auto  max-lg:mt-4 max-lg:mb-4 max-xl::mx-auto"
+          src="./assets/img/scratch img.png" alt="scratch">
+        <div class="lg:max-w-[574px] w-full max-xl:mx-auto">
+          <span class="top-0 w-[189px] h-2 flex mb-[9px] max-lg:mx-auto">
+            <span class="w-[166px] bg-blue"></span>
+            <span class="w-[23px] bg-sky"></span>
+          </span>
+
+          <p
+            class="w-full mb-[5px] font-Poppins font-bold text-5xl max-md:text-3xl text-black leading-150 max-lg:text-center">
+            Join Us !</p>
+          <p
+            class="lg:max-w-[543px] w-full font-Poppins font-normal text-base text-black/70 leading-150 max-lg:text-center">
+            Lorem ipsum dolor
+            sit amet,
+            consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut
+            justo et leo congue lacinia vitae nec arcu.</p>
+
+          <div class="table max-w-[574px] w-full max-lg:mx-auto">
+            <p
+              class=" mb-[14px] mt-[15px] font-Poppins font-bold text-custom-35 text-black leading-150 max-lg:text-center">
+              Sign Up</p>
+
+            <!-- form -->
+            <form action="" class="flex flex-col gap-4">
+              <div class="flex gap-4 max-w-[574px] w-full">
+                <input
+                  class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[279px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
+                  type="text" required placeholder="First Name">
+                <input
+                  class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[279px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
+                  type="text" required placeholder="Last Name">
+              </div>
+              <input
+                class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[574px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
+                type="e-mail" required placeholder="Email Address">
+              <div class="flex gap-4 max-w-[574px] w-full">
+                <input
+                  class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[279px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
+                  type="password" required placeholder="Password">
+                <input
+                  class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[279px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
+                  type="password" required placeholder="Confirm Password">
+              </div>
+              <textarea
+                class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[574px] w-full p-[10px_17px_8px_17px] min-h-[124px] resize-none outline-none rounded-[5px] border-black/40 border mb-[21px]"
+                type="text" required placeholder="About Me"></textarea>
+
+              <button type="submit"
+                class="w-full font-Poppins font-normal text-base text-white leading-150 p-[11px_28px] rounded-[23px] bg-blue border border-blue transition-all ease-in cursor-pointer duration-300 hover:text-blue hover:bg-white">Sign
+                up</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w-full bg-black">
+    <div
+      class="container max-w-[1360px] w-full mx-auto flex justify-between max-lg:gap-5 max-lg:flex-wrap items-baseline pt-[81px] pr-5 pl-5">
+      <!-- loggo side -->
+      <div class="lg:max-w-[346px] w-full">
+        <a class="flex items-center gap-[14px]" href="loggo">
+          <img width="98px" height="66px" class="max-md:max-w-[60px] max-md:w-full max-md:h-auto"
+            src="./assets/img/loggo.png" alt="loggo">
+          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 tracking-[-0.52px] text-blue">
+            Events
+            <span class="text-sky">Free</span>
+          </p>
+        </a>
+        <p class=" mt-9 mb-6 lg:max-w-[346px] w-full font-Poppins font-normal text-sm text-white leading-150">Lorem ipsum
+          dolor sit
+          amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c
+        </p>
+
+        <div class="flex gap-[15px]">
+          <a target="_blank" class="transition-all duration-300 ease-in hover:animate-[shake_0.5s_ease-in-out]"
+            href="https://www.instagram.com/">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.2058 6.06667C10.19 6.06667 9.19703 6.36773 8.35242 6.93179C7.50781 7.49585 6.84952 8.29756 6.46078 9.23556C6.07205 10.1736 5.97034 11.2057 6.16852 12.2015C6.36669 13.1972 6.85585 14.1119 7.57413 14.8298C8.29241 15.5477 9.20756 16.0366 10.2039 16.2347C11.2001 16.4328 12.2328 16.3311 13.1713 15.9426C14.1098 15.5541 14.9119 14.8961 15.4763 14.0519C16.0406 13.2078 16.3418 12.2153 16.3418 11.2C16.3403 9.83903 15.7987 8.53424 14.8358 7.57189C13.873 6.60954 12.5675 6.06821 11.2058 6.06667V6.06667ZM11.2058 15.4C10.3747 15.4 9.56227 15.1537 8.87123 14.6922C8.18018 14.2307 7.64157 13.5747 7.32352 12.8073C7.00547 12.0398 6.92225 11.1953 7.08439 10.3806C7.24653 9.5659 7.64675 8.81753 8.23444 8.23015C8.82213 7.64277 9.57088 7.24276 10.386 7.0807C11.2012 6.91864 12.0461 7.00182 12.8139 7.31971C13.5818 7.63759 14.2381 8.17592 14.6998 8.86661C15.1616 9.55729 15.408 10.3693 15.408 11.2C15.4068 12.3135 14.9637 13.3811 14.1759 14.1685C13.3881 14.9559 12.3199 15.3988 11.2058 15.4ZM16.3418 0H6.06983C4.46057 0.00182184 2.91774 0.641572 1.77982 1.7789C0.641906 2.91622 0.00182279 4.45825 0 6.06667V16.3333C0.00182279 17.9418 0.641906 19.4838 1.77982 20.6211C2.91774 21.7584 4.46057 22.3982 6.06983 22.4H16.3418C17.9511 22.3982 19.4939 21.7584 20.6318 20.6211C21.7698 19.4838 22.4099 17.9418 22.4117 16.3333V6.06667C22.4099 4.45825 21.7698 2.91622 20.6318 1.7789C19.4939 0.641572 17.9511 0.00182184 16.3418 0V0ZM21.4779 16.3333C21.4763 17.6943 20.9347 18.9991 19.9718 19.9614C19.009 20.9238 17.7035 21.4651 16.3418 21.4667H6.06983C4.70815 21.4651 3.40268 20.9238 2.43983 19.9614C1.47697 18.9991 0.935364 17.6943 0.93382 16.3333V6.06667C0.935364 4.7057 1.47697 3.40091 2.43983 2.43856C3.40268 1.4762 4.70815 0.934877 6.06983 0.933333H16.3418C17.7035 0.934877 19.009 1.4762 19.9718 2.43856C20.9347 3.40091 21.4763 4.7057 21.4779 6.06667V16.3333ZM18.2095 5.13333C18.2095 5.31793 18.1547 5.49838 18.0521 5.65187C17.9495 5.80535 17.8037 5.92498 17.633 5.99562C17.4624 6.06626 17.2746 6.08475 17.0935 6.04873C16.9123 6.01272 16.746 5.92383 16.6154 5.7933C16.4848 5.66277 16.3958 5.49647 16.3598 5.31542C16.3238 5.13437 16.3422 4.94671 16.4129 4.77616C16.4836 4.60562 16.6033 4.45985 16.7569 4.3573C16.9104 4.25474 17.091 4.2 17.2757 4.2C17.5232 4.20031 17.7606 4.29874 17.9356 4.47371C18.1107 4.64867 18.2092 4.88589 18.2095 5.13333V5.13333Z"
+                fill="white" />
+            </svg>
+          </a>
+
+          <a target="_blank" class="transition-all duration-300 ease-in hover:animate-[shake_0.5s_ease-in-out]"
+            href="https://www.facebook.com/">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.2303 0C5.03842 0 0 5.0344 0 11.2238C0 17.4132 5.03842 22.4476 11.2303 22.4476C17.4223 22.4476 22.4607 17.4132 22.4607 11.2238C22.4607 5.0344 17.4223 0 11.2303 0ZM11.2303 21.7C5.45094 21.7 0.74939 17.0002 0.74939 11.2238C0.74939 5.4474 5.45094 0.7476 11.2303 0.7476C17.0098 0.7476 21.7113 5.4474 21.7113 11.2238C21.7113 17.0002 17.0098 21.7 11.2303 21.7Z"
+                fill="white" />
+              <path
+                d="M13.6824 4.92378H11.8138C9.43399 4.89998 9.13004 6.37208 9.13004 7.96528V9.12378H8.07949C8.03201 9.11744 7.9837 9.12213 7.93832 9.13748C7.89295 9.15282 7.85172 9.17842 7.81785 9.21228C7.78397 9.24613 7.75836 9.28734 7.74301 9.33269C7.72765 9.37804 7.72296 9.42632 7.72931 9.47378V11.5738C7.72296 11.6212 7.72765 11.6695 7.74301 11.7149C7.75836 11.7602 7.78397 11.8014 7.81785 11.8353C7.85172 11.8691 7.89295 11.8947 7.93832 11.9101C7.9837 11.9254 8.03201 11.9301 8.07949 11.9238H9.13004V17.1738C9.1242 17.2213 9.12931 17.2696 9.14499 17.3148C9.16066 17.3601 9.18648 17.4012 9.22047 17.435C9.25446 17.4687 9.29572 17.4943 9.3411 17.5097C9.38648 17.5251 9.43479 17.5299 9.48232 17.5238H11.6219C11.8285 17.5476 11.9959 17.3803 11.9301 17.1738L11.9315 11.9238H13.6824C13.7299 11.9301 13.7782 11.9254 13.8236 11.9101C13.8689 11.8947 13.9102 11.8691 13.944 11.8353C13.9779 11.8014 14.0035 11.7602 14.0189 11.7149C14.0342 11.6695 14.0389 11.6212 14.0326 11.5738V9.47378C14.0389 9.42632 14.0342 9.37804 14.0189 9.33269C14.0035 9.28734 13.9779 9.24613 13.944 9.21228C13.9102 9.17842 13.8689 9.15282 13.8236 9.13748C13.7782 9.12213 13.7299 9.11744 13.6824 9.12378H11.9294L11.9315 8.07378C11.9994 7.62648 11.9994 7.69928 12.4147 7.72378H13.6677C13.765 7.70208 13.8687 7.71398 13.9415 7.64328C14.0144 7.57258 14.0564 7.47598 14.0319 7.37378V5.27378C14.0384 5.22636 14.0338 5.17809 14.0185 5.13273C14.0032 5.08737 13.9777 5.04615 13.9439 5.01227C13.9101 4.9784 13.8689 4.95279 13.8235 4.93744C13.7782 4.92209 13.7299 4.91742 13.6824 4.92378V4.92378ZM13.3077 6.98458L12.4295 6.95098C11.3418 6.95098 11.2507 7.54108 11.2507 8.14518L11.2479 9.47238C11.2478 9.52153 11.2575 9.57021 11.2762 9.61564C11.295 9.66108 11.3225 9.70237 11.3572 9.73715C11.392 9.77194 11.4332 9.79953 11.4787 9.81836C11.5241 9.83719 11.5728 9.84688 11.6219 9.84688H13.3322V11.1993H11.6233C11.5241 11.1993 11.4289 11.2386 11.3586 11.3087C11.2884 11.3788 11.2488 11.4739 11.2486 11.5731L11.2479 16.8238H9.8304V11.5738C9.8304 11.3673 9.68963 11.2 9.48232 11.2H8.42967V9.84758H9.48232C9.53146 9.84766 9.58014 9.83805 9.62556 9.81931C9.67099 9.80058 9.71227 9.77308 9.74706 9.73838C9.81709 9.66768 9.8297 9.57248 9.8297 9.47308V7.96458C9.8297 6.39518 10.147 5.64758 11.8131 5.64758H13.307V6.98458H13.3077Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a target="_blank" class="transition-all duration-300 ease-in hover:animate-[shake_0.5s_ease-in-out]"
+            href="https://x.com/">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_143001_542)">
+                <path
+                  d="M11.205 -0.0238037C5.01303 -0.0238037 -0.0253906 5.0106 -0.0253906 11.2C-0.0253906 17.3894 5.01303 22.4238 11.205 22.4238C17.3969 22.4238 22.4353 17.3894 22.4353 11.2C22.4353 5.0106 17.3969 -0.0238037 11.205 -0.0238037ZM11.205 21.6762C5.42555 21.6762 0.724 16.9764 0.724 11.2C0.724 5.4236 5.42555 0.723796 11.205 0.723796C16.9844 0.723796 21.6859 5.4236 21.6859 11.2C21.6859 16.9764 16.9844 21.6762 11.205 21.6762Z"
+                  fill="white" />
+                <path
+                  d="M17.3632 7.73222C17.4409 7.5885 17.5049 7.4378 17.5544 7.28212C17.5773 7.20991 17.5778 7.13244 17.5557 7.05996C17.5337 6.98748 17.4902 6.92339 17.4309 6.87614C17.3716 6.8289 17.2994 6.80073 17.2238 6.79535C17.1482 6.78997 17.0728 6.80764 17.0074 6.84602C16.6485 7.05911 16.2601 7.21786 15.8546 7.31712C15.3625 6.87316 14.7233 6.62704 14.0603 6.62622C13.7001 6.6265 13.3437 6.69946 13.0124 6.84074C12.6811 6.98202 12.3818 7.18871 12.1323 7.44841C11.8829 7.70811 11.6885 8.01548 11.5608 8.35209C11.4331 8.68869 11.3747 9.04761 11.3891 9.40732C9.81398 9.20914 8.37566 8.41251 7.3725 7.18272C7.33407 7.13613 7.28495 7.0995 7.22932 7.07594C7.17369 7.05238 7.11319 7.0426 7.05297 7.04741C6.99274 7.05222 6.93457 7.07148 6.88339 7.10357C6.8322 7.13566 6.78953 7.17962 6.75898 7.23172C6.52928 7.62577 6.40443 8.07207 6.39634 8.52805C6.38824 8.98403 6.49718 9.43448 6.71276 9.83642C6.65989 9.84534 6.60909 9.86384 6.56288 9.89102C6.50625 9.92711 6.45963 9.97687 6.42732 10.0357C6.395 10.0946 6.37804 10.1606 6.37799 10.2277C6.37799 11.0222 6.73167 11.7516 7.30177 12.2472L7.27725 12.2717C7.23421 12.3204 7.2046 12.3794 7.19134 12.443C7.17808 12.5066 7.18162 12.5725 7.20161 12.6343C7.32049 13.005 7.51899 13.3452 7.7832 13.6312C8.04742 13.9171 8.37097 14.1419 8.73121 14.2898C7.99134 14.6506 7.16334 14.7912 6.34577 14.6951C6.26173 14.6866 6.17722 14.7061 6.10549 14.7507C6.03375 14.7953 5.97884 14.8624 5.94936 14.9415C5.92105 15.0212 5.92052 15.1082 5.94785 15.1882C5.97519 15.2683 6.02878 15.3367 6.09994 15.3825C7.21143 16.0955 8.50447 16.4743 9.82518 16.4738C14.1534 16.4738 16.7406 12.9598 16.7406 9.56272L16.7399 9.44792C17.1594 9.12061 17.5237 8.72832 17.8191 8.28592C17.8639 8.21904 17.8859 8.13954 17.8819 8.05919C17.8779 7.97884 17.8481 7.90191 17.797 7.83979C17.7458 7.77767 17.676 7.73367 17.5979 7.7143C17.5198 7.69492 17.4375 7.70121 17.3632 7.73222V7.73222ZM16.1411 8.96072C16.0902 8.99725 16.0494 9.04592 16.0222 9.10229C15.9951 9.15866 15.9825 9.22093 15.9856 9.28342C15.9898 9.37582 15.9919 9.46962 15.9919 9.56202C15.9919 12.5916 13.6856 15.7255 9.82588 15.7255C9.13749 15.7258 8.45397 15.6104 7.80393 15.3839C8.58245 15.2348 9.3138 14.9011 9.93654 14.4109C9.99716 14.3631 10.0415 14.2978 10.0636 14.2239C10.0857 14.15 10.0844 14.071 10.0598 13.9979C10.0353 13.9247 9.98876 13.8609 9.92658 13.8152C9.8644 13.7695 9.7896 13.744 9.71242 13.7424C9.41044 13.7367 9.11404 13.66 8.84713 13.5188C8.58022 13.3775 8.35027 13.1755 8.17582 12.929C8.35301 12.9171 8.5267 12.8877 8.69549 12.8422C8.77718 12.8204 8.84905 12.7715 8.89937 12.7036C8.94969 12.6356 8.97549 12.5527 8.97257 12.4682C8.96964 12.3837 8.93816 12.3027 8.88326 12.2385C8.82836 12.1742 8.75328 12.1304 8.67028 12.1142C8.32922 12.0449 8.01343 11.8842 7.75671 11.6493C7.49999 11.4144 7.31199 11.1142 7.21282 10.7807C7.39912 10.8276 7.59032 10.8549 7.78152 10.8612C7.9461 10.8605 8.09878 10.7597 8.14991 10.6015C8.20103 10.4433 8.1408 10.269 8.00143 10.1766C7.67189 9.95718 7.41816 9.64141 7.27488 9.27244C7.1316 8.90348 7.10577 8.49931 7.20091 8.11512C8.41747 9.36274 10.0602 10.1057 11.8009 10.1955C11.9242 10.1962 12.032 10.1521 12.107 10.0618C12.1819 9.97152 12.2106 9.85182 12.184 9.73702C12.0882 9.32472 12.1311 8.89236 12.3059 8.50685C12.4808 8.12134 12.7779 7.80417 13.1512 7.60443C13.5246 7.40469 13.9534 7.33351 14.3713 7.40192C14.7893 7.47032 15.173 7.67449 15.4631 7.98282C15.5066 8.02919 15.5612 8.06374 15.6217 8.08321C15.6822 8.10268 15.7467 8.10643 15.8091 8.09412C15.9247 8.07102 16.0388 8.04442 16.1516 8.01362C16.1007 8.05165 16.0479 8.08694 15.9933 8.11932C15.9207 8.16379 15.8654 8.23165 15.8365 8.31174C15.8076 8.39182 15.8069 8.47935 15.8345 8.55989C15.8621 8.64043 15.9163 8.70918 15.9882 8.75482C16.0601 8.80045 16.1454 8.82024 16.23 8.81092L16.3575 8.79482C16.2873 8.85261 16.2151 8.90794 16.1411 8.96072V8.96072Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_143001_542">
+                  <rect width="22.4117" height="22.4" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </a>
+        </div>
+
+      </div>
+
+      <!-- card side -->
+      <div
+        class="max-w-[602px] w-full flex justify-between max-sm:justify-start mt-[45px] max-sm:flex-wrap max-sm:gap-9">
+        <!-- first list -->
+        <div class="max-w-[74px] w-full">
+          <p class="font-bold text-white text-sm font-Poppins leading-150 mb-[11px]">SERVICES</p>
+          <ul class="flex flex-col gap-3">
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-10"
+                href="#">
+                About
+              </a>
+            </li>
+
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-9"
+                href="#">
+                News
+              </a>
+            </li>
+
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                href="#">
+                ullamcorper
+              </a>
+            </li>
+
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-13"
+                href="#">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- 2nd list -->
+        <div class="max-w-[74px] w-full">
+          <p class="font-bold text-white text-sm font-Poppins leading-150 mb-[11px]">Events</p>
+          <ul class="flex flex-col gap-3">
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                href="#">
+                ullamcorper
+              </a>
+            </li>
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                href="#">
+                ullamcorper
+              </a>
+            </li>
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                href="#">
+                ullamcorper
+              </a>
+            </li>
+            <li class="relative"><a
+                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                href="#">
+                ullamcorper
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- 3rd list -->
+        <div class="max-w-[306px] w-full">
+          <p class="font-bold text-white text-sm font-Poppins leading-150 mb-[10px]">GALLERY</p>
+
+          <div class="grid grid-cols-3 max-sm:grid-cols-2 gap-[13px]">
+            <img width="90" height="62" class="sm:mx-auto" src="./assets/img/gallery-1.png" alt="gallery-1">
+            <img width="90" height="62" class="sm:mx-auto" src="./assets/img/gallery-2.png" alt="gallery-2">
+            <img width="90" height="62" class="sm:mx-auto" src="./assets/img/gallery-3.png" alt="gallery-3">
+            <img width="90" height="62" class="sm:mx-auto" src="./assets/img/gallery-4.png" alt="gallery-4">
+            <img width="90" height="62" class="sm:mx-auto" src="./assets/img/gallery-5.png" alt="gallery-5">
+            <div class="max-w-[90px] w-full bg-voilet sm:mx-auto p-[13px_24px]">
+              <p class="font-bold font-Poppins text-center text-custom-12 text-white leading-150">Show
+                More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p
+      class=" max-w-[384px] w-full pb-[25px] font-normal text-center font-Poppins text-sm text-white leading-150 mt-[95px] mx-auto">
+      © Credits of companyName belong
+      to companyName.</p>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
+</html>
