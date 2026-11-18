@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>homepage</title>
-  <link rel="shortcut icon" href="./assets/img/loggo.png" type="image/x-icon">
+  <link rel="icon" type="images/svg" href="assets/img/icon.svg">
   <style type="text/tailwindcss">
     @theme {
         --font-Poppins:"Poppins", sans-serif;
@@ -79,99 +79,98 @@
         <a class="flex items-center gap-[14px]" href="loggo">
           <img width="98px" height="66px" class="max-md:max-w-[60px] max-md:w-full max-md:h-auto"
             src="./assets/img/loggo.png" alt="loggo">
-          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 tracking-[-0.52px] text-blue">
+          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 text-blue">
             Events
-            <span class="text-sky">Free</span>
+            <span class="text-sky -ml-[6px]">Free</span>
           </p>
         </a>
 
-        <!-- checkbox -->
-        <input type="checkbox" id="menu-toggle" class="peer hidden" />
-
-
         <!-- desktop screen -->
-        <ul class="nav-list hidden lg:flex items-center gap-[30px] ">
-          <li class="relative flex">
-            <a href="#product" class="font-Poppins text-base font-normal leading-150 text-white 
-                                before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full ">HOME</a>
+        <ul class="nav-list hidden lg:flex items-center gap-[56px] ">
+          <li class="relative flex mr-1">
+            <a href="#product"
+              class="font-Poppins text-base font-normal leading-150 text-white 
+                               hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in ">HOME</a>
           </li>
 
-          <li class="relative flex">
-            <a href="#services" class="font-Poppins text-base font-normal leading-150 text-white
-                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full">EVENTS</a>
+          <li class="relative flex mr-2">
+            <a href="#services"
+              class="font-Poppins text-base font-normal leading-150 text-white
+                             hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">EVENTS</a>
           </li>
 
-          <li class="relative flex">
-            <a href="#contact" class="font-Poppins text-base font-normal leading-150 text-white
-                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full">FEED</a>
+          <li class="relative flex mr-2">
+            <a href="#contact"
+              class="font-Poppins text-base font-normal leading-150 text-white
+                             hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">FEED</a>
           </li>
 
           <li class="relative flex">
             <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
-                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full">USER NAME</a>
+                             hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">USER
+              NAME</a>
           </li>
 
           <li>
             <button
-              class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-3 font-Poppins text-base font-semibold leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue">
+              class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-[11px] font-Poppins text-base font-semibold leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue border border-blue">
               Log Out </button>
           </li>
         </ul>
 
+        <!-- Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
         <!-- Mobile full-screen menu -->
         <ul
           class="fixed inset-0 z-40 flex h-screen w-full translate-x-full flex-col items-center justify-center gap-8 bg-nav text-white transition-transform duration-300 peer-checked:translate-x-0 lg:hidden">
 
           <li class="relative flex">
-            <a href="#product" class="font-Poppins text-base font-normal leading-150 text-white 
-                                before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full ">HOME</a>
+            <a href="#product"
+              class="font-Poppins text-base font-normal leading-150 text-white hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">HOME</a>
           </li>
 
           <li class="relative flex">
-            <a href="#services" class="font-Poppins text-base font-normal leading-150 text-white
-                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full">EVENTS</a>
+            <a href="#services"
+              class="font-Poppins text-base font-normal leading-150 text-white before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">EVENTS</a>
           </li>
 
           <li class="relative flex">
-            <a href="#contact" class="font-Poppins text-base font-normal leading-150 text-white
-                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full">FEED</a>
+            <a href="#contact"
+              class="font-Poppins text-base font-normal leading-150 text-white hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">FEED</a>
           </li>
 
           <li class="relative flex">
             <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
-                             before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
-                                before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
-                                hover:before:w-full">USER NAME</a>
+                             hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">USER
+              NAME</a>
           </li>
 
           <button
-            class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-3 font-Poppins text-base font-normal leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue">
+            class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-[11px] font-Poppins text-base font-normal leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue border border-blue">
             Log Out </button>
         </ul>
 
 
+        <!-- Hamburger menu -->
+        <label for="menu-toggle" class="relative z-50 flex cursor-pointer flex-col gap-[6px] lg:hidden
+             peer-checked:[&>span:first-child]:translate-y-[8px]
+             peer-checked:[&>span:first-child]:rotate-45
+             peer-checked:[&>span:nth-child(2)]:opacity-0
+             peer-checked:[&>span:last-child]:-translate-y-[8px]
+             peer-checked:[&>span:last-child]:-rotate-45">
 
-        <label for="menu-toggle" class="relative z-50 flex cursor-pointer flex-col gap-[6px] lg:hidden"
-          aria-label="Toggle navigation menu">
-          <span class="h-[2px] w-7 rounded bg-white transition-all peer-checked:bg-black"></span>
-          <span class="h-[2px] w-7 rounded bg-white transition-all"></span>
-          <span class="h-[2px] w-7 rounded bg-white transition-all"></span>
+          <!-- First line -->
+          <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
+
+          <!-- Middle line -->
+          <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
+
+          <!-- Third line -->
+          <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
+
         </label>
+
 
       </nav>
       <p
@@ -188,12 +187,13 @@
       </p>
 
       <p
-        class="text-left font-normal font-Yantramanav text-xl leading-130 lg:max-w-[765px] w-full text-white mt-[18px] max-xl:text-center mx-auto">
+        class="text-left font-normal font-Yantramanav text-xl leading-130 lg:max-w-[765px] w-full text-white mt-[18px] max-xl:text-center max-xl:mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse
         maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit
         cursus,</p>
 
-      <div class="flex justify-between gap-3 items-center max-sm:flex-wrap max-sm:justify-center max-w-[309px] w-full mt-[33px] max-xl:mx-auto">
+      <div
+        class="flex justify-between gap-3 items-center max-sm:flex-wrap max-sm:justify-center max-w-[309px] w-full mt-[33px] max-xl:mx-auto">
         <button
           class="font-semibold font-Poppins text-xl text-white bg-blue p-[12px_28px] rounded-[28px] hover:text-blue hover:bg-white cursor-pointer transition-all ease-in duration-300">Get
           Started</button>
@@ -201,9 +201,10 @@
       </div>
       <!-- here we work -->
       <div
-        class="max-md:flex-col max-lg:rounded-[50px] max-md:rounded-2xl gap-5 max-lg:justify-center max-xl:mx-auto max-xl:flex-wrap max-w-[962px] flex items-center content-center justify-between w-full bg-blurblue rounded-[150px] mt-[145px] max-lg:mt-28 max-md:mt-16 max-sm:mt-9 pl-[35px] pr-[23px] max-lg:pl-6 max-lg:pr-6">
+        class="max-lg:flex-col max-lg:rounded-[50px] max-md:rounded-2xl gap-5 max-lg:justify-center max-xl:mx-auto max-xl:flex-wrap max-w-[962px] flex items-center content-center justify-between w-full bg-blurblue max-md:bg-transparent rounded-[150px] mt-[145px] max-lg:mt-14 max-md:mt-9 pl-[35px] pr-[23px] max-lg:pl-6 max-lg:pr-6 max-md:p-0">
         <div
-          class="flex items-center gap-[53px] max-md:mt-[22px] mx-auto max-md:mb-[22px] max-sm:gap-7 max-xl:mx-auto max-sm:flex-wrap max-sm:justify-center">
+          class="flex items-center gap-[53px] max-lg:gap-11 max-md:pt-[22px] max-md:bg-blurblue max-md:rounded-2xl max-lg:pl-6 max-lg:pr-6 
+          max-md:pb-[22px] max-sm:gap-7 max-xl:mx-auto max-lg:flex-wrap max-sm:justify-center">
           <!-- location box -->
           <div class="gap-[17px] flex items-center justify-center pt-[17px] pb-[17px] max-md:p-0">
             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -262,7 +263,7 @@
         </div>
         <!-- button -->
         <button
-          class="p-[24.5px_39.5px] max-lg:my-4 max-md:mt-0 max-sm:p-[20px_30px] max-xl bg-white text-blue rounded-[150px] font-Poppins font-bold text-xl max-md:text-base leading-none hover:bg-blue hover:text-white border border-white transition-all ease-in duration-300 cursor-pointer">
+          class="p-[20px_39.5px] max-lg:my-4 max-md:mt-0 max-sm:p-[20px_30px] max-xl bg-white text-blue rounded-[150px] font-Poppins font-bold text-xl max-md:text-base leading-150 hover:bg-blue hover:text-white border border-white transition-all ease-in duration-300 cursor-pointer max-lg:w-[50%] max-lg:p-3 max-lg:m-0 max-sm:w-[60%]">
           GO CHECK
         </button>
       </div>
@@ -275,7 +276,16 @@
       <!-- frame -->
       <div class=" frame grid grid-cols-2 max-xl:grid-cols-1 items-center">
         <!-- img frame (left) -->
-        <img class="max-xl:mx-auto " width="624" height="477" src="./assets/img/iframe.png" alt="i-frame img">
+        <div class="flex relative">
+          <svg class="absolute left-[41%] top-[44%] right-[59%] bottom-[56%] w-[79px] h-auto
+               max-md:w-[60px] max-sm:w-[45px]" width="79.2" height="79.2" viewBox="0 0 80 80" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="39.6018" cy="39.6018" r="37.9517" stroke-width="3.30015" stroke="white" />
+            <path d="M59.7754 38.8547L28.3928 56.9734L28.3928 20.736L59.7754 38.8547Z" fill="white" />
+          </svg>
+
+          <img class="max-xl:mx-auto" width="624" height="477" src="./assets/img/iframe.png" alt="i-frame img">
+        </div>
         <!-- right frame -->
         <div class="max-xl:mx-auto flex flex-col max-xl:justify-center max-xl:items-center ">
 
@@ -289,7 +299,7 @@
             What make
             us special ?</p>
           <p
-            class="lg:max-w-[633px] text-left w-full font-normal text-base text-black/70 font-Poppins max-xl:text-center leading-150 mt-[6px] mb-[9px]">
+            class="max-w-[633px] text-left w-full font-normal text-base text-black/70 font-Poppins max-xl:text-center leading-150 mt-[6px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna
             in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc
             elit elit, malesuada id suscipit cursus,</p>
@@ -397,7 +407,7 @@
   <section class="section-2 bg-[url(./assets/img/section-2.webp)] w-full bg-cover bg-center">
 
     <div class="container max-w-[960px] w-full mx-auto pr-5 pl-5 pt-[50px] ">
-      <div class="lg:max-w-[765px] w-full gap-10 lg:mx-auto flex flex-col mb-[78px]">
+      <div class="lg:max-w-[765px] w-full gap-10 lg:mx-auto flex flex-col mb-[78px] max-sm:gap-6 max-sm:mb-12">
         <p
           class="lg:max-w-[708px] w-full mx-auto font-bold font-Poppins text-center text-5xl max-md:text-3xl text-white leading-130 ">
           Lorem ipsum dolor sit amet, consectetur
@@ -408,7 +418,8 @@
         </p>
       </div>
 
-      <div class="max-w-[920px] w-full grid grid-cols-4 max-md:grid-cols-2 max-md:gap-5 pb-[46px]">
+      <div
+        class="max-w-[920px] max-md:max-w-[400px] w-full grid grid-cols-4 max-md:grid-cols-2 max-md:gap-5 pb-[46px] mx-auto">
         <div class="max-w-[122px] w-full flex flex-col items-center mx-auto">
           <img width="39" height="39" src="./assets/img/sec-2 img 1.png" alt="PARTICIPANTS">
           <p class="font-bold text-custom-35 text-white font-Poppinns leading-150 mt-[3px] mb-[4px]">8800</p>
@@ -445,7 +456,7 @@
       <div
         class="max-w-[1319px] w-full flex justify-between mb-[163px] max-lg:mb-20 max-xl:mb-8 max-md:mb-4 max-xl:flex-wrap max-xl:justify-center">
 
-        <div class="lg:max-w-[543px] w-full items-start">
+        <div class="max-w-[543px] w-full items-start">
           <span class=" top-0 w-[189px] h-2 flex mb-[9px] mt-[31px] max-xl:mx-auto">
             <span class="w-[166px] bg-blue"></span>
             <span class="w-[23px] bg-sky"></span>
@@ -454,7 +465,8 @@
             class="lg:max-w-[338px] w-full mb-[12px] font-Poppins font-bold text-5xl max-md:text-3xl text-left text-black leading-138 max-xl:mx-auto max-xl:text-center">
             Explore our
             latest events</p>
-          <p class="w-full font-Poppins font-normal text-base text-black/70 leading-150 text-left max-xl:text-center">Lorem
+          <p class="w-full font-Poppins font-normal text-base text-black/70 leading-150 text-left max-xl:text-center">
+            Lorem
             ipsum dolor sit amet,
             consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut
             justo et leo congue lacinia vitae nec arcu.</p>
@@ -467,9 +479,10 @@
             class="card max-w-[339px] w-full rounded-[5px] transition-all ease-in cursor-pointer duration-300 hover:shadow-custom p-[10px_11px_24px_13px]">
             <img width="315" height="173" src="./assets/img/card-1.png" alt="card-one">
             <div class="max-w-[271px] mt-[13px] w-full ml-[11px] ">
-              <p class="font-normal font-Poppins text-sm leading-150 text-black/70">09/23/2021</p>
-              <p class="font-medium font-Poppins text-2xl text-black leading-130 pb-[5px]">Lorem ipsum</p>
-              <p class="max-w-[270px] w-full font-Poppins font-normal leading-150 text-black/70 text-base">Lorem ipsum
+              <p class="text-left font-normal font-Poppins text-sm leading-150 text-black/70">09/23/2021</p>
+              <p class="text-left font-medium font-Poppins text-2xl text-black leading-130 pb-[5px]">Lorem ipsum</p>
+              <p class="text-left max-w-[270px] w-full font-Poppins font-normal leading-150 text-black/70 text-base">
+                Lorem ipsum
                 dolor sit amet,
                 consectetur adipiscing elit. Nunc efficitur urna in </p>
             </div>
@@ -479,9 +492,10 @@
             class="card max-w-[339px] w-full rounded-[5px] transition-all ease-in cursor-pointer duration-300 hover:shadow-custom p-[10px_11px_24px_13px]">
             <img width="315" height="173" src="./assets/img/card-2.png" alt="card-two">
             <div class="max-w-[271px] w-full mt-[13px] ml-[11px]">
-              <p class="font-normal font-Poppins text-sm leading-150 text-black/70">09/23/2021</p>
-              <p class="font-medium font-Poppins text-2xl text-black leading-130 pb-[5px]">Lorem ipsum</p>
-              <p class="max-w-[270px] w-full font-Poppins font-normal leading-150 text-black/70 text-base">Lorem ipsum
+              <p class="text-left font-normal font-Poppins text-sm leading-150 text-black/70">09/23/2021</p>
+              <p class="text-left font-medium font-Poppins text-2xl text-black leading-130 pb-[5px]">Lorem ipsum</p>
+              <p class="text-left max-w-[270px] w-full font-Poppins font-normal leading-150 text-black/70 text-base">
+                Lorem ipsum
                 dolor sit amet,
                 consectetur adipiscing elit. Nunc efficitur urna in </p>
             </div>
@@ -493,19 +507,20 @@
       <div
         class="max-w-[1284px] w-full flex justify-between items-center max-xl:gap-5 max-xl:flex-wrap max-xl:justify-center">
         <img width="536" height="533"
-          class=" max-xl:max-w-[435px] max-md:max-w-[350px] max-lg:w-full max-lg:h-auto  max-lg:mt-4 max-lg:mb-4 max-xl::mx-auto"
+          class=" max-xl:max-w-[435px] max-md:max-w-[350px] max-lg:w-full max-lg:h-auto max-lg:mt-4 max-lg:mb-12 max-xl::mx-auto"
           src="./assets/img/scratch img.png" alt="scratch">
+
         <div class="lg:max-w-[574px] w-full max-xl:mx-auto">
-          <span class="top-0 w-[189px] h-2 flex mb-[9px] max-lg:mx-auto">
+          <span class="top-0 w-[189px] max-md:w-[130px] h-2 flex mb-[9px] max-lg:mx-auto">
             <span class="w-[166px] bg-blue"></span>
             <span class="w-[23px] bg-sky"></span>
           </span>
 
           <p
-            class="w-full mb-[5px] font-Poppins font-bold text-5xl max-md:text-3xl text-black leading-150 max-lg:text-center">
+            class="max-w-[205px] max-lg:mx-auto w-full mb-[5px] font-Poppins font-bold text-5xl max-md:text-3xl text-black leading-150 max-lg:text-center">
             Join Us !</p>
           <p
-            class="lg:max-w-[543px] w-full font-Poppins font-normal text-base text-black/70 leading-150 max-lg:text-center">
+            class="mx-auto max-w-[543px] w-full font-Poppins font-normal text-base text-black/70 leading-150 max-lg:text-center">
             Lorem ipsum dolor
             sit amet,
             consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut
@@ -528,7 +543,7 @@
               </div>
               <input
                 class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[574px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
-                type="e-mail" required placeholder="Email Address">
+                type="email" required placeholder="Email Address">
               <div class="flex gap-4 max-w-[574px] w-full">
                 <input
                   class="font-Poppins font-normal text-base text-black/70 leading-150 max-w-[279px] w-full p-[9px_17px_8px_17px] outline-none rounded-[5px] border-black/40 border"
@@ -554,18 +569,19 @@
 
   <footer class="w-full bg-black">
     <div
-      class="container max-w-[1360px] w-full mx-auto flex justify-between max-lg:gap-5 max-lg:flex-wrap items-baseline pt-[81px] pr-5 pl-5">
+      class="container max-w-[1360px] w-full mx-auto flex justify-between max-lg:gap-5 max-lg:flex-wrap items-baseline pt-[81px] max-md:pt-10 pr-5 pl-5">
       <!-- loggo side -->
       <div class="lg:max-w-[346px] w-full">
         <a class="flex items-center gap-[14px]" href="loggo">
           <img width="98px" height="66px" class="max-md:max-w-[60px] max-md:w-full max-md:h-auto"
             src="./assets/img/loggo.png" alt="loggo">
-          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 tracking-[-0.52px] text-blue">
+          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 text-blue">
             Events
-            <span class="text-sky">Free</span>
+            <span class="text-sky -ml-[6px]">Free</span>
           </p>
         </a>
-        <p class=" mt-9 mb-6 lg:max-w-[346px] w-full font-Poppins font-normal text-sm text-white leading-150">Lorem ipsum
+        <p class="mt-9 mb-6 max-w-[346px] max-lg:max-w-[700px] w-full font-Poppins font-normal text-sm text-white leading-150">Lorem
+          ipsum
           dolor sit
           amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c
         </p>
@@ -622,21 +638,21 @@
           <p class="font-bold text-white text-sm font-Poppins leading-150 mb-[11px]">SERVICES</p>
           <ul class="flex flex-col gap-3">
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-10"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-10"
                 href="#">
                 About
               </a>
             </li>
 
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-9"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-9"
                 href="#">
                 News
               </a>
             </li>
 
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
                 href="#">
                 ullamcorper
               </a>
@@ -656,25 +672,25 @@
           <p class="font-bold text-white text-sm font-Poppins leading-150 mb-[11px]">Events</p>
           <ul class="flex flex-col gap-3">
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
                 href="#">
                 ullamcorper
               </a>
             </li>
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
                 href="#">
                 ullamcorper
               </a>
             </li>
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
                 href="#">
                 ullamcorper
               </a>
             </li>
             <li class="relative"><a
-                class="text-custom-12 font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
+                class="text-custom-12 block font-Poppins text-white font-normal leading-150 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in hover:before:w-19"
                 href="#">
                 ullamcorper
               </a>
@@ -701,7 +717,7 @@
       </div>
     </div>
     <p
-      class=" max-w-[384px] w-full pb-[25px] font-normal text-center font-Poppins text-sm text-white leading-150 mt-[95px] mx-auto">
+      class=" max-w-[384px] w-full pb-[25px] font-normal text-center font-Poppins text-sm text-white leading-150 mt-[95px] max-sm:mt-11 mx-auto">
       © Credits of companyName belong
       to companyName.</p>
 
