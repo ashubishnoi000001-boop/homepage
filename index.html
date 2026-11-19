@@ -74,107 +74,109 @@
 
 <body>
   <section class="section-hero bg-[url(./assets/img/header-sectionbg.webp)] w-full bg-cover bg-center ">
-    <div class="container-hero max-w-[1360px] w-full  mx-auto pb-[104px] pt-[17px] pl-5 pr-5 max-lg:pb-20">
-      <nav class="relative flex w-full items-center justify-between">
-        <a class="flex items-center gap-[14px]" href="loggo">
-          <img width="98px" height="66px" class="max-md:max-w-[60px] max-md:w-full max-md:h-auto"
-            src="./assets/img/loggo.png" alt="loggo">
-          <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 text-blue">
-            Events
-            <span class="text-sky -ml-[6px]">Free</span>
-          </p>
-        </a>
+    <nav class="relative max-w-[1360px] mx-auto w-full flex items-center justify-between pt-[17px] pl-5 pr-5">
+      <a class="flex items-center gap-[14px]" href="loggo">
+        <img width="98px" height="66px" class="max-md:max-w-[60px] max-md:w-full max-md:h-auto"
+          src="./assets/img/loggo.png" alt="loggo">
+        <p class="loggo font-Poppins text-4xl max-md:text-2xl font-bold leading-135 text-blue">
+          Events
+          <span class="text-sky -ml-[6px]">Free</span>
+        </p>
+      </a>
 
-        <!-- desktop screen -->
-        <ul class="nav-list hidden lg:flex items-center gap-[56px] ">
-          <li class="relative flex mr-1">
-            <a href="#product"
-              class="font-Poppins text-base font-normal leading-150 text-white 
+      <!-- desktop screen -->
+      <ul class="nav-list hidden lg:flex items-center gap-[56px] ">
+        <li class="relative flex mr-1">
+          <a href="#product"
+            class="font-Poppins text-base font-normal leading-150 text-white 
                                hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in ">HOME</a>
-          </li>
+        </li>
 
-          <li class="relative flex mr-2">
-            <a href="#services"
-              class="font-Poppins text-base font-normal leading-150 text-white
+        <li class="relative flex mr-2">
+          <a href="#services"
+            class="font-Poppins text-base font-normal leading-150 text-white
                              hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">EVENTS</a>
-          </li>
+        </li>
 
-          <li class="relative flex mr-2">
-            <a href="#contact"
-              class="font-Poppins text-base font-normal leading-150 text-white
+        <li class="relative flex mr-2">
+          <a href="#contact"
+            class="font-Poppins text-base font-normal leading-150 text-white
                              hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">FEED</a>
-          </li>
+        </li>
 
-          <li class="relative flex">
-            <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
+        <li class="relative flex">
+          <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
                              hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">USER
-              NAME</a>
-          </li>
+            NAME</a>
+        </li>
 
-          <li>
-            <button
-              class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-[11px] font-Poppins text-base font-semibold leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue border border-blue">
-              Log Out </button>
-          </li>
-        </ul>
-
-        <!-- Checkbox -->
-        <input type="checkbox" id="menu-toggle" class="peer hidden" />
-
-        <!-- Mobile full-screen menu -->
-        <ul
-          class="fixed inset-0 z-40 flex h-screen w-full translate-x-full flex-col items-center justify-center gap-8 bg-nav text-white transition-transform duration-300 peer-checked:translate-x-0 lg:hidden">
-
-          <li class="relative flex">
-            <a href="#product"
-              class="font-Poppins text-base font-normal leading-150 text-white hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">HOME</a>
-          </li>
-
-          <li class="relative flex">
-            <a href="#services"
-              class="font-Poppins text-base font-normal leading-150 text-white before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">EVENTS</a>
-          </li>
-
-          <li class="relative flex">
-            <a href="#contact"
-              class="font-Poppins text-base font-normal leading-150 text-white hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">FEED</a>
-          </li>
-
-          <li class="relative flex">
-            <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
-                             hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">USER
-              NAME</a>
-          </li>
-
+        <li>
           <button
-            class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-[11px] font-Poppins text-base font-normal leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue border border-blue">
+            class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-[11px] font-Poppins text-base font-semibold leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue border border-blue">
             Log Out </button>
-        </ul>
+        </li>
+      </ul>
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+      <!-- Mobile full-screen menu -->
+      <ul
+        class="fixed inset-0 z-40 flex h-screen w-full translate-x-full flex-col items-center justify-center gap-8 bg-nav text-white transition-transform duration-300 peer-checked:translate-x-0 lg:hidden">
+
+        <li class="relative flex">
+          <a href="#product"
+            class="font-Poppins text-base font-normal leading-150 text-white hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">HOME</a>
+        </li>
+
+        <li class="relative flex">
+          <a href="#services"
+            class="font-Poppins text-base font-normal leading-150 text-white before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">EVENTS</a>
+        </li>
+
+        <li class="relative flex">
+          <a href="#contact"
+            class="font-Poppins text-base font-normal leading-150 text-white hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">FEED</a>
+        </li>
+
+        <li class="relative flex">
+          <a href="#login" class="font-Poppins text-base font-normal leading-150 text-white
+                             hover:[-webkit-text-stroke:0.5px] cursor-pointer transition-all duration-300 ease-in">USER
+            NAME</a>
+        </li>
+
+        <button
+          class="cursor-pointer rounded-[23px] bg-blue px-[29px] py-[11px] font-Poppins text-base font-normal leading-150 text-white transition-all duration-[280ms] hover:bg-white hover:text-blue border border-blue">
+          Log Out </button>
+      </ul>
 
 
-        <!-- Hamburger menu -->
-        <label for="menu-toggle" class="relative z-50 flex cursor-pointer flex-col gap-[6px] lg:hidden
+      <!-- Hamburger menu -->
+      <label for="menu-toggle" class="relative z-50 flex cursor-pointer flex-col gap-[6px] lg:hidden
              peer-checked:[&>span:first-child]:translate-y-[8px]
              peer-checked:[&>span:first-child]:rotate-45
              peer-checked:[&>span:nth-child(2)]:opacity-0
              peer-checked:[&>span:last-child]:-translate-y-[8px]
              peer-checked:[&>span:last-child]:-rotate-45">
 
-          <!-- First line -->
-          <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
+        <!-- First line -->
+        <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
 
-          <!-- Middle line -->
-          <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
+        <!-- Middle line -->
+        <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
 
-          <!-- Third line -->
-          <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
+        <!-- Third line -->
+        <span class="h-[2px] w-7 rounded bg-white transition-all duration-300"></span>
 
-        </label>
+      </label>
 
 
-      </nav>
-      <p
-        class=" items-start lg:max-w-[1044px] w-full mt-[173px] max-lg:mt-32 max-md:mt-16 max-sm:mt-10 text-white font-Poppins font-bold leading-150 text-custom-64 max-xl:text-5xl max-lg:text-4xl max-sm:text-3xl max-xl:text-center max-xl:mx-auto">
+    </nav>
+    <div
+      class="container-hero max-w-[1360px] w-full mx-auto pb-[104px] pt-[173px] max-lg:pt-20 max-md:pt-[60px] pl-5 pr-5 max-lg:pb-20 max-md:pb-[60px]">
+
+      <h1
+        class=" items-start lg:max-w-[1044px] w-full text-white font-Poppins font-bold leading-150 text-custom-64 max-xl:text-5xl max-lg:text-4xl max-xl:text-center max-xl:mx-auto">
         Sed tortor in
         <span class="relative inline-block w-fit">
           quisque morbi
@@ -184,7 +186,7 @@
           </span>
         </span>
         scelerisque etiam eu.
-      </p>
+      </h1>
 
       <p
         class="text-left font-normal font-Yantramanav text-xl leading-130 lg:max-w-[765px] w-full text-white mt-[18px] max-xl:text-center max-xl:mx-auto">
@@ -197,13 +199,14 @@
         <button
           class="font-semibold font-Poppins text-xl text-white bg-blue p-[12px_28px] rounded-[28px] hover:text-blue hover:bg-white cursor-pointer transition-all ease-in duration-300">Get
           Started</button>
-        <p class="text-white font-Poppins leading-150 text-xl font-normal text-center">Learn more</p>
+        <p
+          class="text-white font-Poppins leading-150 text-xl font-normal text-center cursor-pointer transition-all duration-300 ease-in hover:[-webkit-text-stroke:0.5px]">
+          Learn more</p>
       </div>
       <!-- here we work -->
       <div
-        class="max-lg:flex-col max-lg:rounded-[50px] max-md:rounded-2xl gap-5 max-lg:justify-center max-xl:mx-auto max-xl:flex-wrap max-w-[962px] flex items-center content-center justify-between w-full bg-blurblue max-md:bg-transparent rounded-[150px] mt-[145px] max-lg:mt-14 max-md:mt-9 pl-[35px] pr-[23px] max-lg:pl-6 max-lg:pr-6 max-md:p-0">
-        <div
-          class="flex items-center gap-[53px] max-lg:gap-11 max-md:pt-[22px] max-md:bg-blurblue max-md:rounded-2xl max-lg:pl-6 max-lg:pr-6 
+        class="max-lg:flex-col max-lg:rounded-[50px] max-md:rounded-2xl gap-5 max-lg:justify-center max-xl:mx-auto max-xl:flex-wrap max-w-[962px] flex items-center content-center justify-between w-full bg-blurblue rounded-[150px] mt-[145px] max-lg:mt-14 max-md:mt-9 pl-[35px] pr-[23px] max-lg:pl-6 max-lg:pr-6 max-md:p-0">
+        <div class="flex items-center gap-[53px] max-lg:gap-11 max-md:pt-[22px]  max-lg:pl-6 max-lg:pr-6 
           max-md:pb-[22px] max-sm:gap-7 max-xl:mx-auto max-lg:flex-wrap max-sm:justify-center">
           <!-- location box -->
           <div class="gap-[17px] flex items-center justify-center pt-[17px] pb-[17px] max-md:p-0">
@@ -263,7 +266,7 @@
         </div>
         <!-- button -->
         <button
-          class="p-[20px_39.5px] max-lg:my-4 max-md:mt-0 max-sm:p-[20px_30px] max-xl bg-white text-blue rounded-[150px] font-Poppins font-bold text-xl max-md:text-base leading-150 hover:bg-blue hover:text-white border border-white transition-all ease-in duration-300 cursor-pointer max-lg:w-[50%] max-lg:p-3 max-lg:m-0 max-sm:w-[60%]">
+          class="p-[20px_39.5px] max-lg:my-4 max-md:mt-0 max-xl bg-white text-blue rounded-[150px] font-Poppins font-bold text-xl max-md:text-base leading-150 hover:bg-blue hover:text-white border border-white transition-all ease-in duration-300 cursor-pointer max-lg:w-[50%] max-lg:p-3 max-lg:m-0 max-sm:w-[60%]">
           GO CHECK
         </button>
       </div>
@@ -272,13 +275,13 @@
 
   <section class="section1 w-full">
     <div
-      class="container max-w-[1401px] w-full  mx-auto pt-[137px] pb-[73px] p-5 max-lg:pt-20 max-md:pb-[60px] max-md:pt-[60px]">
+      class="container max-w-[1401px] w-full  mx-auto pt-[137px] pb-[73px] p-5 max-lg:pt-20 max-lg:pb-20 max-md:pb-[60px] max-md:pt-[60px]">
       <!-- frame -->
-      <div class=" frame grid grid-cols-2 max-xl:grid-cols-1 items-center">
+      <div class=" frame grid grid-cols-2 max-xl:grid-cols-1 max-xl:gap-10 items-center">
         <!-- img frame (left) -->
         <div class="flex relative">
-          <svg class="absolute left-[41%] top-[44%] right-[59%] bottom-[56%] w-[79px] h-auto
-               max-md:w-[60px] max-sm:w-[45px]" width="79.2" height="79.2" viewBox="0 0 80 80" fill="none"
+          <svg class="absolute left-[41%] top-[44%] right-[59%] bottom-[56%] max-xl:left-[50%] max-xl:right-[50%] 
+           w-[79px] h-auto max-md:w-[60px] max-sm:w-[45px]" width="79.2" height="79.2" viewBox="0 0 80 80" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <circle cx="39.6018" cy="39.6018" r="37.9517" stroke-width="3.30015" stroke="white" />
             <path d="M59.7754 38.8547L28.3928 56.9734L28.3928 20.736L59.7754 38.8547Z" fill="white" />
@@ -294,10 +297,10 @@
             <span class="w-[23px] bg-sky"></span>
           </span>
 
-          <p
+          <h2
             class="lg:max-w-[583px] text-left w-full font-bold text-5xl max-md:text-3xl text-black leading-150 font-Poppins max-xl:text-center ">
             What make
-            us special ?</p>
+            us special ?</h2>
           <p
             class="max-w-[633px] text-left w-full font-normal text-base text-black/70 font-Poppins max-xl:text-center leading-150 mt-[6px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna
@@ -406,12 +409,12 @@
 
   <section class="section-2 bg-[url(./assets/img/section-2.webp)] w-full bg-cover bg-center">
 
-    <div class="container max-w-[960px] w-full mx-auto pr-5 pl-5 pt-[50px] ">
+    <div class="container max-w-[960px] w-full mx-auto pr-5 pl-5 pt-[50px] pb-[46px] max-lg:pb-[50px]">
       <div class="lg:max-w-[765px] w-full gap-10 lg:mx-auto flex flex-col mb-[78px] max-sm:gap-6 max-sm:mb-12">
-        <p
+        <h2
           class="lg:max-w-[708px] w-full mx-auto font-bold font-Poppins text-center text-5xl max-md:text-3xl text-white leading-130 ">
           Lorem ipsum dolor sit amet, consectetur
-        </p>
+        </h2>
         <p class="lg:max-w-[765px] w-full font-normal text-base text-center text-white leading-150">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse
           maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec
@@ -419,7 +422,7 @@
       </div>
 
       <div
-        class="max-w-[920px] max-md:max-w-[400px] w-full grid grid-cols-4 max-md:grid-cols-2 max-md:gap-5 pb-[46px] mx-auto">
+        class="max-w-[920px] max-md:max-w-[400px] w-full grid grid-cols-4 max-md:grid-cols-2 max-md:gap-5 mx-auto">
         <div class="max-w-[122px] w-full flex flex-col items-center mx-auto">
           <img width="39" height="39" src="./assets/img/sec-2 img 1.png" alt="PARTICIPANTS">
           <p class="font-bold text-custom-35 text-white font-Poppinns leading-150 mt-[3px] mb-[4px]">8800</p>
@@ -461,16 +464,17 @@
             <span class="w-[166px] bg-blue"></span>
             <span class="w-[23px] bg-sky"></span>
           </span>
-          <p
+          <h2
             class="lg:max-w-[338px] w-full mb-[12px] font-Poppins font-bold text-5xl max-md:text-3xl text-left text-black leading-138 max-xl:mx-auto max-xl:text-center">
             Explore our
-            latest events</p>
+            latest events</h2>
           <p class="w-full font-Poppins font-normal text-base text-black/70 leading-150 text-left max-xl:text-center">
             Lorem
             ipsum dolor sit amet,
             consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut
             justo et leo congue lacinia vitae nec arcu.</p>
-          <p class="mt-[15px] mb-[51px] font-Poppins font-bold text-base text-black leading-150 max-xl:text-center">
+          <p
+            class="mt-[15px] mb-[51px] font-Poppins font-bold text-base text-black leading-150 max-xl:text-center cursor-pointer transition-all duration-300 ease-in hover:[-webkit-text-stroke:0.5px]">
             LEARN MORE</p>
         </div>
         <div class="flex gap-[31px] max-w-[709px] w-full max-lg:flex-wrap max-md:text-center max-md:justify-center">
@@ -516,9 +520,9 @@
             <span class="w-[23px] bg-sky"></span>
           </span>
 
-          <p
+          <h2
             class="max-w-[205px] max-lg:mx-auto w-full mb-[5px] font-Poppins font-bold text-5xl max-md:text-3xl text-black leading-150 max-lg:text-center">
-            Join Us !</p>
+            Join Us !</h2>
           <p
             class="mx-auto max-w-[543px] w-full font-Poppins font-normal text-base text-black/70 leading-150 max-lg:text-center">
             Lorem ipsum dolor
@@ -527,9 +531,9 @@
             justo et leo congue lacinia vitae nec arcu.</p>
 
           <div class="table max-w-[574px] w-full max-lg:mx-auto">
-            <p
-              class=" mb-[14px] mt-[15px] font-Poppins font-bold text-custom-35 text-black leading-150 max-lg:text-center">
-              Sign Up</p>
+            <h2
+              class=" mb-[14px] mt-[15px] font-Poppins font-bold text-custom-35 max-lg:text-3xl text-black leading-150 max-lg:text-center">
+              Sign Up</h2>
 
             <!-- form -->
             <form action="" class="flex flex-col gap-4">
@@ -569,7 +573,7 @@
 
   <footer class="w-full bg-black">
     <div
-      class="container max-w-[1360px] w-full mx-auto flex justify-between max-lg:gap-5 max-lg:flex-wrap items-baseline pt-[81px] max-md:pt-10 pr-5 pl-5">
+      class="container max-w-[1360px] w-full mx-auto flex justify-between max-lg:gap-5 max-lg:flex-wrap items-baseline pt-[81px] max-lg:pt-[60px] max-md:pt-10 pr-5 pl-5">
       <!-- loggo side -->
       <div class="lg:max-w-[346px] w-full">
         <a class="flex items-center gap-[14px]" href="loggo">
@@ -580,7 +584,9 @@
             <span class="text-sky -ml-[6px]">Free</span>
           </p>
         </a>
-        <p class="mt-9 mb-6 max-w-[346px] max-lg:max-w-[700px] w-full font-Poppins font-normal text-sm text-white leading-150">Lorem
+        <p
+          class="mt-9 mb-6 max-w-[346px] max-lg:max-w-[700px] w-full font-Poppins font-normal text-sm text-white leading-150">
+          Lorem
           ipsum
           dolor sit
           amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c
@@ -717,7 +723,7 @@
       </div>
     </div>
     <p
-      class=" max-w-[384px] w-full pb-[25px] font-normal text-center font-Poppins text-sm text-white leading-150 mt-[95px] max-sm:mt-11 mx-auto">
+      class=" max-w-[384px] w-full pb-[25px] font-normal text-center font-Poppins text-sm text-white leading-150 pt-[95px] max-lg:pt-20 max-md:pt-[60px] mx-auto">
       © Credits of companyName belong
       to companyName.</p>
 
